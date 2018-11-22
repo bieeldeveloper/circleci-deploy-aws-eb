@@ -5,9 +5,9 @@
 version: 2
 jobs:
   build:
+    working_directory: ~/build
     docker:
-      # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: gradientco/node-elastic-beanstalk:7.10.0
       
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
